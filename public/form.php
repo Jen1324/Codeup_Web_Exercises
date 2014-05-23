@@ -60,8 +60,67 @@ Have feedback? Leave it here!</textarea>
 
 
 
+       <p>
+       <label for="signup">Would you like to save a copy to your sent folder?</label>
+       <label>Yes <input id="signup" name="signup" type="checkbox" value="yes" checked></lable>
+       <label>No <input id="signup" name="signup" type="checkbox" value="no"></lable>
+       </p>
+
+
+
+
+       <p>
+       <label>Do you like Monster?</label>
+       <label>Yes <input name="monster[]" type="radio" value="yes"></label>
+       <label>No <input name="monster[]" type="radio" value="no"></label>
+       </p>
+       <p>
+       <label for="question">Do you like Red Bull?</label>
+       <label>Yes <input name="redbull[]" type="radio" value="yes"></label>
+       <label>No <input name="redbull[]" type="radio" value="no"></label>
+       </p>
+
+
+    <p>
+       <label> What is your favorite panda?</label>
+       <label>Giant<input type="checkbox" name="panda[]" value="giant"></label>
+       <label>Mini<input type="checkbox" name="panda[]" value="giant"></label>
+       <label>Red<input type="checkbox" name="panda[]" value="giant"></label>
+       <label>Omar<input type="checkbox" name="panda[]" value="giant"></label>
+    </p>
+
+
 
 <input type="submit" name="Send" value="Send">
+
+
+
+
+
+    </form>
+
+
+<h2>Multiple Choice Test:</h2>
+    <form method="POST">
+    <p>
+       <label>Choose your favorite colors!</label>
+       <br><label>Pink<input type="checkbox" name="color[]" value="pink"></label>
+       <br><label>Blue<input type="checkbox" name="color[]" value="blue"></label>
+       <br><label>Red<input type="checkbox" name="color[]" value="red"></label>
+       <br><label>Purple<input type="checkbox" name="color[]" value="purple"></label>
+    </p>
+    <p>
+       <label>Choose your favorite animals!</label>
+       <br><label>Cat<input type="checkbox" name="animal[]" value="cat"></label>
+       <br><label>Dog<input type="checkbox" name="animal[]" value="dog"></label>
+       <br><label>Bird<input type="checkbox" name="animal[]" value="bird"></label>
+       <br><label>Lizard<input type="checkbox" name="animal[]" value="lizard"></label>
+    </p>
+
+
+
+
+
 
 
 
