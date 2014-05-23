@@ -117,6 +117,30 @@ Have feedback? Leave it here!</textarea>
        <br><label>Lizard<input type="checkbox" name="animal[]" value="lizard"></label>
     </p>
 
+    <p>
+       <label for ="movie">What movie are you excited for this Summer?</label>
+       <br>
+       <select id="movie" name="movie[]" multiple>
+       <br><option value="Captain America: The Winter Soldier">Captain America: The Winter Soldier</option>
+       <br><option value="Godzilla">Godzilla</option>
+       <br><option value="X-Men: Days of Future Past">X-Men: Days of Future Past</option>
+       <br><option value="Maleficent">Maleficent</option>
+       </select>
+    </p>
+
+
+ </form>
+
+<form = method="POST">
+
+<h2>Select Testing:</h2>
+
+<label for="question">Are you excited for Hannibal tonight?</label>
+    <select id="question" name="question">
+        <option value="1" selected>Yes</option>
+        <option value="2">No</option>
+    </select>
+    <input type="submit" value="submit">
 
 
 
@@ -126,20 +150,38 @@ Have feedback? Leave it here!</textarea>
 
 
 
-    </form>
+
+
+
+
+
+
+
+
+
+</form>
+
+
+
+
+
+
+
+<!-- <form name="loginform" method="POST">
+    <label for="transmission">Select your transmission type: </label>
+    <select id="transmission" name="transmission">
+        <option>Automatic</option>
+        <option selected>Manual</option>
+    </select>
+    <input type="submit" value="submit">
+</form> --> 
+
 
 
 
 
 
 </body>
-
-
-
-
-
-
-
 
 
 </html>
