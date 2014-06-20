@@ -1,0 +1,139 @@
+<html>
+<head>
+	<style>
+		div 
+		{
+		    width: 460px;
+		    height: 600px;
+		    margin: 0 auto;
+		}
+		div div 
+		{
+		    width: 150px;
+		    height: 150px;
+		    outline: 2px solid;
+		    float: left;
+		}
+
+		h1 
+		{
+			text-align: center;
+		}
+
+		h2
+		{
+			text-align: center;
+			font-size: 20px;
+		}
+
+		p 
+		{
+			text-align: center;
+			font-size: 25px;
+			border-bottom: 1px solid black;
+		}
+
+		body 
+		{
+			background-color: #6D6C88;
+		}
+
+		#btn
+		{
+			margin: 0 auto;
+			margin-top: -100px;
+		}
+
+		.mole {
+			display: none;
+			cursor: pointer;
+		}
+
+		.active {
+			cursor: pointer;
+		}
+
+		.main-container {
+			  max-width: 960px;
+			  min-height: 600px;
+			  border-radius: 6px;
+			  background-color: white;
+		}
+
+</style>
+</head>
+<body>
+	<h1>Whack-A-Drilbur Game</h1>
+<h2>Each time you hit the Drilbur you get a point. 
+	<br>See how many points you can get in a game!</h2>
+<p id="score"> Points: 0</p>
+
+<div class="main-container">
+    <div class="cell"><img class="mole" src="Drilbur.png"></div>
+    <div class="cell"><img class="mole" src="Drilbur.png"></div>
+    <div class="cell"><img class="mole" src="Drilbur.png"></div>
+    <div class="cell"><img class="mole" src="Drilbur.png"></div>
+    <div class="cell"><img class="mole" src="Drilbur.png"></div>
+    <div class="cell"><img class="mole" src="Drilbur.png"></div>
+    <div class="cell"><img class="mole" src="Drilbur.png"></div>
+    <div class="cell"><img class="mole" src="Drilbur.png"></div>
+    <div class="cell"><img class="mole" src="Drilbur.png"></div>
+</div>
+
+<div style="text-align:center;">
+	<button id="btn">Start Game</button>
+</div>
+
+<script src="/js/jquery.js"></script>
+
+<script>
+
+$('#btn').click(function() {
+	$(this)
+});
+
+
+
+function getRandomInt(min, max) {
+   return (Math.floor(Math.random() * (max - min + 1)) + min);
+ };
+
+ function generateCell() {
+  	
+
+ 	var moles = $('.mole');
+ 	var randomMole = $(moles[getRandomInt(0,8)]);
+ 	randomMole.fadeIn(400).delay(1000).fadeOut(400);
+ };
+
+  function clearCell() {
+
+  }
+
+// Begin Main Logic
+var delay = 1000;
+
+// Begin Main Game Loop
+setInterval(function () {
+	generateCell();
+
+}, 2000);
+
+var point = 0;
+
+$('.mole').click(function () {
+	$(this).hide();
+	point++;
+	console.log(point);
+	// update the text of id score with point value
+	$('#score').text('Points: ' + point);
+});
+
+ 
+// var smackSound = new Audio("audio/boing.wav");
+</script>
+
+
+
+</body>
+</html>

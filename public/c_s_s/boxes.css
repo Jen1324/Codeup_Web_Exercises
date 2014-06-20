@@ -1,0 +1,90 @@
+#red_box, #orange_box, #yellow_box, #green_box, #blue_box, #purple_box {
+	border: 1px solid black;
+	color: #FFF;
+	width: 50px;
+	height: 50px;
+	padding: 10px;
+	position: relative;
+	top: 30px;
+}
+
+
+/*#codeup_red {}*/
+#red_box {
+	background-color: red;
+	float: left;
+	margin-bottom: 50px;
+	position: relative;
+}
+
+/*#codeup_orange {}*/
+#orange_box {
+	background-color: orange;
+	float: left;
+	position: relative;
+	margin-left: 50px;
+	margin-bottom: 50px;
+
+}
+
+/*#codeup_yellow{}*/
+#yellow_box {
+	background-color: yellow;
+	float: left;
+	position: relative;
+	margin-left: 50px;
+	margin-bottom: 50px;
+
+}
+
+/*#codeup_green{}*/
+#green_box {
+	background-color: green;
+	float: left;
+	position: relative;
+	left: 0px;
+	margin-bottom: 50px;
+
+}
+
+/*#codeup_blue{}*/
+#blue_box {
+	background-color: blue;
+	float: left;
+	position: relative;
+	margin-left: 50px;
+	margin-bottom: 50px;
+
+}
+
+/*#codeup_purple{}*/
+#purple_box {
+	background-color: purple;
+	float: left;
+	position: relative;
+	margin-left: 50px;
+	margin-bottom: 50px;
+
+}
+
+#CodeR, #CodeO, #CodeY, #CodeG, #CodeB, #CodeP {
+	position: relative;
+	top: -90px;
+	right: -40px;
+}
+
+
+p {
+ 	position: relative;
+ 	margin-top:150px;
+ 	margin-left: 500px;
+ }
+
+ #Ribbon {
+ 	position: relative;
+ 	top: -195px;
+ 	right: -400px;
+ }
+
+
+

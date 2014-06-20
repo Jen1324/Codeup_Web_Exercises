@@ -1,0 +1,22 @@
+<html>
+<body>
+<script>
+
+var shapes = ['square', 'rectangle', 'circle', 'triangle'];
+
+for (var i = 0; i < shapes.length; i++) {
+	console.log('The shape at index ' +i + ' is: ' + shapes[i]);
+}
+
+shapes.forEach (function (element, index, array) {
+
+    // element is the shape name
+    // index is the iterator
+    // array is the shapes array itself
+
+	console.log('The shape at index ' + index + ' is: ' + element);
+});
+
+</script>
+</body>
+</html>

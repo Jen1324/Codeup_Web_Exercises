@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title></title>
+<script>
+
+var count = 0;
+var max = 10;
+var interval = 1000; // interval time in milliseconds
+var delay = 5000
+
+// var intervalId = setInterval(function () {
+//     if (count >= max) {
+//         clearInterval(intervalId);
+//         console.log('All done');
+//     } else {
+//         count++;
+//         console.log('Repeating this line ' + count);
+//     }
+// }, interval);
+
+//setInterval(function(){}, pause)
+//setInterval(function(){}, 1000) - run the function every 1000 milisecongs
+
+// setInterval(function(){
+// 	window.location = 'http://google.com';
+// }, 5000)
+
+// will redirect in 5 seconds
+
+var timeoutID= setTimeout(function(){
+	alert('Here is a delayed hello!')
+}, delay);
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

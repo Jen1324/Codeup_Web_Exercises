@@ -1,0 +1,36 @@
+.main {
+  margin: 75 auto;
+  max-width: 960px;
+  min-height: 1000px;
+  border-radius: 6px;
+  background-color: white;
+}
+
+body {
+	background-color: #F777A7;
+}
+
+.header {
+	color: #E8638F;
+}
+
+.info {
+	text-align: left;
+	font-family: Tahoma;
+	font-size: 15px;
+
+}
+
+.pic {
+	border: 2px solid black;
+}
+
+.panel-pink {
+	background-color: #E11E71;
+
+}
+
+.panel-pink .panel-heading {
+	color: white;
+	font-weight: bold;
+}

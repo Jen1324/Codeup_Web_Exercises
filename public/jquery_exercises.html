@@ -1,0 +1,68 @@
+<html>
+<head>
+
+
+<script src="/js/jquery.js"></script>
+
+</head>
+<body>
+
+<ul>
+	<li>List One</li>
+	<li>List Two</li>
+	<li>List Three</li>
+</ul>
+
+<p>This is a paragraph!</p>
+
+ <div class="codeup">	
+	<h1>Header One</h1>
+</div>
+
+<!-- <div class="codeup">
+	<h2>Header Two</h2>
+</div>
+
+
+<div class="codeup">
+	<h3>Header Three</h3>
+</div>
+
+<div id="codeup">
+	<h3>An Id instead of a class</h3>  -->
+
+<script>
+	$('h1').click(function () {
+	$(this).css('background-color', '#FF0');
+	});
+</script>
+
+<script>
+
+	$('p').dblclick(function () {
+	
+	$(this).css('font-size', '18px');
+
+	});
+
+</script>
+
+<script>
+
+	$('li').hover(function () {
+	
+	$(this).css('color','red');
+
+}, function (){
+	
+	$(this).css('color','black');
+
+
+
+});
+
+</script>
+
+
+</body>
+</html>

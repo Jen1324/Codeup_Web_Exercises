@@ -1,0 +1,54 @@
+<html>
+<head></head>
+<body>
+
+<!-- // Creating Elapsed time
+
+// var start = Date.now();
+// console.log(start);
+
+// // do something for a long time
+// setTimeout(function() {
+
+// // get the end timestamp
+// var end = Date.now();
+// console.log(end);
+
+// // calculate the elapsed time in milliseconds
+// var elapsed = end - start;
+// console.log('Elapsed: ' + elapsed);
+// }, 2000); 
+
+
+//MOMENT.JS REFERENCE LINK <script src="/js/moment.js"></script>
+
+//USING MOMENT.JAS -->
+
+<script src="/js/moment.js"></script>
+<script>
+// get the current date/time with moment
+var now = moment();
+
+// getting calendar date strings
+console.log(now.calendar());
+
+// formatting dates
+console.log(now.format("dddd, MMMM Do YYYY, h:mm:ss a"));
+
+// date addition
+console.log(moment().add('days', 1).fromNow());
+console.log(moment().add('weeks', 1).fromNow());
+
+// date subtraction
+console.log(moment().subtract('days', 1).fromNow());
+console.log(moment().subtract('weeks', 1).fromNow());
+
+// get a specific date
+var codeup = moment("2-4-2014", "MM-DD-YYYY");
+console.log(codeup.fromNow());
+
+</script>
+
+
+</body>
+</html>

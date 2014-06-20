@@ -1,0 +1,132 @@
+<!-- <html>
+<body>
+<script>
+
+var globalVar = "Look, I'm Global!";
+
+sayHello();
+
+function sayHello() {
+
+//declare a local variable
+var localVar = "Look, I'm Local!";
+
+//localVar is accessible here
+	alert(localVar);
+//globalVar is accessible here
+	alert(globalVar);
+}
+
+//localVar is NOT accessible here (out-of-scope) and this will produce an error
+alert(localVar);
+
+
+</script>
+</body>
+</html> -->
+
+<!-- <html>
+<body>
+<script>
+
+var globalVar = "Look, I'm Global!";
+
+sayHello();
+
+function sayHello() {
+
+//declare a local variable
+var localVar = "Look, I'm Local!";
+
+//localVar is accessible here
+	alert(globalVar);
+//globalVar is accessible here
+	globalVar = "Look, I'm a new global!";
+}
+
+//localVar is NOT accessible here (out-of-scope) and this will produce an error
+alert(globalVar);
+
+
+</script>
+</body>
+</html> -->
+
+
+
+<!-- <html>
+<body>
+<script>
+
+var globalVar = "Look, I'm Global!";
+
+sayHello();
+
+function sayHello() {
+
+//declare a local variable
+var localVar = "Look, I'm Local!";
+
+//localVar is accessible here
+	alert(globalVar);
+//globalVar is accessible here
+   var globalVar = "Look, I'm Local globalVar!";
+
+   alert(globalVar);
+}
+
+//localVar is NOT accessible here (out-of-scope) and this will produce an error
+alert(globalVar);
+
+
+</script>
+</body>
+</html> -->
+
+<!-- ANYTHING WITH A VAR IS SUBJECT TO HOISTING. -->
+
+
+<!-- <html>
+<body>
+<script>
+
+sayHello();
+sayHello2();
+
+function sayHello() {
+	alert('hello');
+}
+
+var sayHello = function() {
+	alert('hello2');
+}
+
+
+</script>
+</body>
+</html> -->
+
+
+<html>
+<body>
+<script>
+
+var sayHello2 = function() {
+	alert('hello2');
+}
+
+function sayHello() {
+	alert('hello');
+}
+
+sayHello();
+sayHello2();
+
+
+</script>
+</body>
+</html>
+
+
+
+

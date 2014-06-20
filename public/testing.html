@@ -1,0 +1,433 @@
+<!-- MOUSE EVENTS - CLICK, DOUBLE CLICK, AND HOVER -->
+
+<!-- <html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<h1 id="page-heading">Example Page</h1>
+<button id="btnTest">Click Me!</button>
+
+<script src="/js/jquery.js"></script>
+<script>
+
+$('#btnTest').hover(function () {
+	
+	$('#page-heading').css('color','pink');
+
+}, function (){
+	
+	$('#page-heading').css('color','black');
+
+
+
+});
+
+</script>
+</body>
+</html> -->
+
+<!-- KEYBOARD EVENTS - KEYDOWN, UP, AND PRESS.  -->
+
+<!-- USING ATTRIBUTE METHODS: HTML, CSS, ADD CLASS, REMOVE CLASS, TOGGLE CLASS -->
+
+<!-- HTML -->
+
+<!-- <html>
+<head>
+    <title>Exampe jQuery Page</title>
+    <script src="/js/jquery.js"></script>
+    <script>
+        $('document').ready(function() {
+        	var h1 = $('#baddies').html();
+
+        	alert(h1);
+        });
+    </script>
+</head>
+<body>
+    <h1 id="baddies">Hello Badlands</h1>
+</body>
+</html> -->
+
+<!-- JAVASCRIPT AT BOTTOM -->
+
+<!-- <html>
+<head>
+    <title>Exampe jQuery Page</title>
+</head>
+<body>
+    <h1 id="baddies">Hello Badlands</h1>
+
+    <script src="/js/jquery.js"></script>
+    <script>
+        $('#baddies').click(function() {
+        	var h1 = $('#baddies').html();
+
+        	alert(h1);
+        });
+    </script>
+</body>
+</html> -->
+
+<!-- JAVASCRIPT AT TOP -->
+
+<!-- <html>
+<head>
+    <title>Exampe jQuery Page</title>
+
+      <script src="/js/jquery.js"></script>
+   	 	 <script>
+   		 $(document).ready(function() {
+         $('#baddies').click(function() {
+        	alert($(this).html());
+        	});
+        });
+      </script>
+</head>
+<body>
+    <h1 id="baddies">Hello Badlands</h1>
+</body>
+</html> -->
+
+<!-- ADDING STRING AFTER .HTML -->
+
+<!-- <html>
+<head>
+    <title>Exampe jQuery Page</title>
+
+      <script src="/js/jquery.js"></script>
+   	 	 <script>
+   		 $(document).ready(function() {
+   		 	$('#baddies').click(function() {
+   		 	alert($(this).html());
+        	($(this).html('You clicked me!'));
+        	alert($(this).html());
+        	});
+        });
+      </script>
+</head>
+<body>
+    <h1 id="baddies">Hello Badlands</h1>
+</body>
+</html>
+ -->
+
+<!-- ADDING CLASS AND HIGHLIGHTING-->
+
+<!-- <html>
+<head>
+    <title>Example jQuery Page</title>
+    <style>
+        .centered {
+            text-align: center;
+        }
+        .highlighted {
+            background-color: #FF0;
+        }
+    </style>
+    <script src="/js/jquery.js"></script>
+    <script>
+        $('document').ready(function() {
+            $('#highlight-important').click(function(event) {
+                event.preventDefault();
+                $('.important').addClass('highlighted');
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Example Page</h1>
+    <div class="centered important">
+        <h3>NOTICE</h3>
+        <p>This is an important message!</p>
+    </div>
+    <div class="not-important">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, incididunt ut <span class="important">labore et dolore magna aliqua.</span>, quis ut aliquip ex ea commodo.</p>
+    </div>
+    <p class="centered important">
+        This is also very important.
+    </p>
+    <a href="#" id="highlight-important">Click to highlight important text.</a>
+</body>
+</html> -->
+
+<!-- REMOVE CLASS -->
+
+
+<!-- <html>
+<head>
+    <title>Example jQuery Page</title>
+    <style>
+        .centered {
+            text-align: center;
+        }
+        .highlighted {
+            background-color: #FF0;
+        }
+    </style>
+    <script src="/js/jquery.js"></script>
+    <script>
+        $('document').ready(function() {
+            $('#highlight-important').click(function(event) {
+                event.preventDefault();
+                $('.important').removeClass('highlighted');
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Example Page</h1>
+    <div class="centered important highlighted">
+        <h3>NOTICE</h3>
+        <p>This is an important message!</p>
+    </div>
+    <div class="not-important">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, incididunt ut <span class="important highlighted">labore et dolore magna aliqua.</span>, quis ut aliquip ex ea commodo.</p>
+    </div>
+    <p class="centered important highlighted">
+        This is also very important.
+    </p>
+    <a href="#" id="highlight-important">Click to remove highlight from important text.</a>
+</body>
+</html> -->
+
+<!-- TOGGLE CLASS -->
+
+<!-- <html>
+<head>
+    <title>Example jQuery Page</title>
+    <style>
+        .centered {
+            text-align: center;
+        }
+        .highlighted {
+            background-color: #FF0;
+        }
+
+         /*.highlighted {
+            display: none;
+        }*/
+
+    </style>
+    <script src="/js/jquery.js"></script>
+    <script>
+        $('document').ready(function() {
+            $('#highlight-important').click(function(event) {
+                event.preventDefault();
+                $('.important').toggleClass('highlighted');
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Example Page</h1>
+    <div class="centered important highlighted">
+        <h3>NOTICE</h3>
+        <p>This is an important message!</p>
+    </div>
+    <div class="not-important">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, incididunt ut <span class="important highlighted">labore et dolore magna aliqua.</span>, quis ut aliquip ex ea commodo.</p>
+    </div>
+    <p class="centered important highlighted">
+        This is also very important.
+    </p>
+    <a href="#" id="highlight-important">Click to toggle the highlighting of important text.</a>
+</body>
+</html> -->
+
+<!-- TRAVERSING METHODS: .EACH, .FIRST, .LAST, .PARENT, .CHILDREN-->
+
+<!-- .EACH -->
+
+
+<!-- <html>
+<head>
+<script src="/js/jquery.js"></script>
+<script>
+        $(document).ready(function() {
+            $('li').each(function(index) {
+            	if(index % 2 != 0) {
+            	$(this).css('background-color', '#CCC');
+            	}
+            });
+        });
+</script>
+ <style>
+	ul {
+		list-style-type: none;
+	}
+</style>
+</head>
+<body>
+<ul>
+    <li>Linux</li>
+    <li>Apache</li>
+    <li>MySQL</li>
+    <li>PHP</li>
+    <li>Javascript</li>
+</ul>
+</body>
+</html>
+ -->
+<!-- .FIRST -->
+
+<!-- <html>
+<head>
+<script src="/js/jquery.js"></script>
+<script>
+    $(document).ready(function() {
+        $('li').first().css('background-color', '#CCC');
+		});
+</script>
+ <style>
+	ul {
+		list-style-type: none;
+	}
+</style>
+</head>
+<body>
+<ul>
+    <li>Linux</li>
+    <li>Apache</li>
+    <li>MySQL</li>
+    <li>PHP</li>
+    <li>Javascript</li>
+</ul>
+</body>
+</html> -->
+
+<!-- LAST -->
+
+<!-- <html>
+<head>
+<script src="/js/jquery.js"></script>
+<script>
+    $(document).ready(function() {
+        $('li').last().css('background-color', '#CCC');
+		});
+</script>
+ <style>
+	ul {
+		list-style-type: none;
+	}
+</style>
+</head>
+<body>
+<ul>
+    <li>Linux</li>
+    <li>Apache</li>
+    <li>MySQL</li>
+    <li>PHP</li>
+    <li>Javascript</li>
+</ul>
+</body>
+</html> -->
+
+<!-- CHILDREN -->
+
+<!-- <html>
+<head>
+<script src="/js/jquery.js"></script>
+<script>
+    $(document).ready(function() {
+        $('li').children().css('background-color', '#CCC');
+		});
+</script>
+ <style>
+	ul {
+		list-style-type: none;
+	}
+</style>
+</head>
+<body>
+<ul id="list1">
+    <li>Linux</li>
+    <li>Apache</li>
+    <li>MySQL</li>
+    <li>PHP</li>
+    <li>Javascript</li>
+</ul>
+</body>
+</html> -->
+
+<!-- PARENT -->
+
+<!-- <html>
+<head>
+<script src="/js/jquery.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#li2').parent().css('background-color', '#CCC');
+		});
+</script>
+ <style>
+	ul {
+		list-style-type: none;
+	}
+</style>
+</head>
+<body>
+<ul id="list1">
+    <li>Linux</li>
+    <li id="li2">Apache</li>
+    <li>MySQL</li>
+    <li>PHP</li>
+    <li>Javascript</li>
+</ul>
+</body>
+</html>
+ -->
+
+<!-- <html>
+<head>
+    <title>Parks List</title>
+    <script src="/js/jquery.js"></script>
+    <script>
+        $('document').ready(function() {
+            $('li').css('background-color', '#FF0');
+            $('li').parent().css('background-color', '#0F0');
+        });
+    </script>
+</head>
+<body>
+    <h1>Parks List</h1>
+    <h3>National Parks</h3>
+    <ul id="national-parks">
+        <li class="odd">Arches</li>
+        <li>Badlands</li>
+        <li class="odd">Carlsbad Caverns</li>
+        <li>Denali</li>
+        <li class="odd">Everglades</li>
+    </ul>
+    <h3>State Parks of Texas</h3>
+    <ul id="state-parks-texas">
+        <li>Abilene</li>
+        <li>Big Bend</li>
+        <li>Choke Canyon</li>
+        <li>Davis Mountains</li>
+        <li>Enchanted Rock</li>
+    </ul>
+
+<script> 
+
+    $('#national-parks').children('.odd').css('color','blue')
+
+-->
+
+
+
+<!-- EFFECTS: HIDE, SHOW, TOGGLE, FADEIN, FADEOUT, FADETOGGLE, SLIDEUP, SLIDEDOWN, SLIDETOGGLE -->
+
+
+
+
+
+
+
+
+

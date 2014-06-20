@@ -1,0 +1,148 @@
+<!-- <html>
+<body>
+<script>
+
+var user = ['Ben', 'Chris', 'Jason', 'Omar'];
+
+user.forEach (function (element, index, array) {
+	console.log(user + " is " + user.length + "characters long");});
+
+function fireSomebody(who) {
+	var index = user.indexOf(who);
+
+	if(index != -1) {
+		user.splice(index, 1);
+	}
+}
+
+fireSomebody('Chris');
+
+console.log(user);
+
+</script>
+</body>
+</html> -->
+
+<!-- ADDING -->
+
+<!-- <html>
+<body>
+<script>
+
+var user = ['Ben', 'Chris', 'Jason', 'Omar'];
+
+user.forEach (function (element, index, array) {
+	console.log(user + " is " + user.length + "characters long");});
+
+// function fireSomebody(who) {
+// 	var index = user.indexOf(who);
+
+// 	if(index != -1) {
+// 		user.splice(index, 1;
+
+		//Third parameter of splice allows you to add something
+	// }
+// }
+
+function addBeforeSomebody(who, where) {
+	var index = user.indexOf(where)
+
+	if(index != -1) {
+		user.splice(index, 0, who);
+}
+
+}
+
+addBeforeSomebody('Alex', 'Jason');
+
+console.log(user);
+
+</script>
+</body>
+</html> -->
+
+<!-- REPLACING -->
+
+<!-- <html>
+<body>
+<script>
+
+var user = ['Ben', 'Chris', 'Jason', 'Omar'];
+
+user.forEach (function (element, index, array) {
+	console.log(user + " is " + user.length + "characters long");});
+
+// function fireSomebody(who) {
+// 	var index = user.indexOf(who);
+
+// 	if(index != -1) {
+// 		user.splice(index, 1;
+
+		//Third parameter of splice allows you to add something
+	// }
+// }
+
+function replaceSomebody(who, where) {
+	var index = user.indexOf(where)
+
+	if(index != -1) {
+		user.splice(index, 1, who);
+}
+
+}
+
+replaceSomebody('Alex', 'Jason');
+
+console.log(user);
+
+</script>
+</body>
+</html> -->
+
+
+<html>
+<body>
+<script>
+
+var user = ['Ben', 'Chris', 'Jason', 'Omar'];
+
+user.forEach (function (element, index, array) {
+	console.log(user + " is " + user.length + "characters long");});
+
+
+function replaceSomebody(who, where) {
+	var index = user.indexOf(where)
+
+	if(index != -1) {
+		user.splice(index, 1, who);
+}
+
+}
+
+// user.sort();
+// console.log(user);
+
+// user.reverse();
+// console.log(user);
+
+user.sort().reverse();
+console.log(user);
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+<html>
+	<body>
+		<script>
+
+		var randomOdd = Math.floor((Math.random()*50)+1)
+				
+
+		 while(randomOdd % 2 == 0) {
+			randomOdd = Math.floor((Math.random()*50)+1)
+		}
+
+		console.log('Random Odd number is: ' + randomOdd);
+
+		for (var i = 1; i <= 50; i += 2) {
+				if (i % 2 == 0) {
+					continue;
+				} else if (i == randomOdd) {
+					console.log('Skipping number: ' + i);
+					continue;
+				} else {
+					console.log('Current number is: ' + i);
+				}
+		}
+
+		
+	</script>
+	</body>
+	</html>
