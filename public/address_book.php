@@ -3,7 +3,8 @@ require_once 'address_data_store.php';
 
 // TODO: require Filestore class
 
-class InvalidInputException extends Exception {
+class InvalidInputException extends Exception 
+{
 
 }
 
@@ -70,7 +71,8 @@ if (count($_FILES) > 0 && $_FILES['file1']['error'] == 0)
     if ($_FILES['file1']["type"] != "text/csv") 
     {
         echo "ERROR: file must be in text/csv!";
-    } else 
+    } 
+    else 
     {
         // Set the destination directory for uploads
         // Grab the filename from the uploaded file by using basename
@@ -97,7 +99,8 @@ if (!empty($_GET))
     $ads->write($addressBook);
 }
 
-function write_lines($array) {
+function write_lines($array) 
+{
 	$handle = fopen($this->filename, 'w');
 }
 

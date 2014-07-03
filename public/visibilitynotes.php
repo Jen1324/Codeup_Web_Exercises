@@ -1,6 +1,7 @@
 <?php 
 
-class Conversation {
+class Conversation 
+{
 
     // Property to hold name
     private $name = '';

@@ -3,7 +3,8 @@
 $addressBook = [];
 $errorMessage = '';
 
-class AddressDataStore {
+class AddressDataStore 
+{
 
     public $filename = '';
 
@@ -21,9 +22,11 @@ class AddressDataStore {
         // todo
 
         $handle = fopen($this->filename, "r");
-        while (!feof($handle)) {
+        while (!feof($handle)) 
+        {
         	$row = fgetcsv($handle);
-        	if(is_array($row)) {
+        	if(is_array($row)) 
+        	{
         		$addresses[] = $row;
         	}
         }
@@ -35,9 +38,11 @@ class AddressDataStore {
     {
         // Code to write $addresses_array to file $this->filename
         // todo
-        if (is_writable($this->filename)) {
+        if (is_writable($this->filename)) 
+        {
         	$handle = fopen($this->filename, "w");
-        	foreach($addresses as $entries) {
+        	foreach($addresses as $entries) 
+        	{
         		fputcsv($handle, $entries);
         	}
         	fclose($handle);
@@ -62,10 +67,12 @@ if (!empty($_POST))
 		$newAddress['state'] = $_POST['state'];
 		$newAddress['zip'] = $_POST['zip'];
 
-		if (empty($_POST['phone'])) {
+		if (empty($_POST['phone'])) 
+		{
 			$newAddress['phone'] = 'N/A';
 		}
-		else {
+		else 
+		{
 			$newAddress['phone'] = $_POST['phone'];
 		}
 		// 
@@ -75,17 +82,21 @@ if (!empty($_POST))
 		// save the address book
 		$ads->writeAddressBook($addressBook);
 	}
-	else{
+	else
+	{
 		// validation failed
 		$errorMessage = "Validation failed. Please complete all fields.";
 	}
 }
 
-if (count($_FILES) > 0 && $_FILES['file1']['error'] == 0) {
+if (count($_FILES) > 0 && $_FILES['file1']['error'] == 0) 
+{
 
-    if ($_FILES['file1']["type"] != "text/csv") {
+    if ($_FILES['file1']["type"] != "text/csv") 
+    {
         echo "ERROR: file must be in text/csv!";
-    } else {
+    } else 
+    {
         // Set the destination directory for uploads
         // Grab the filename from the uploaded file by using basename
         $upload_dir = '/vagrant/sites/codeup.dev/public/uploads/';

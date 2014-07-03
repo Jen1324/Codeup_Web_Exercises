@@ -7,7 +7,8 @@
 
 session_start();
 
-if (isset($_GET['logout']) && $_GET['logout'] === 'true') {
+if (isset($_GET['logout']) && $_GET['logout'] === 'true') 
+{
     $_SESSION = array();
     session_destroy();
     header("Location: session.php");
@@ -17,20 +18,27 @@ if (isset($_GET['logout']) && $_GET['logout'] === 'true') {
 $username = 'codeup';
 $password = 'letmein';
 
-if (!empty($_POST)) {
-    if ($_POST['username'] == $username && $_POST['password'] == $password) {
+if (!empty($_POST)) 
+{
+    if ($_POST['username'] == $username && $_POST['password'] == $password) 
+    {
         $_SESSION['logged_in'] = true;
         $_SESSION['username'] = $_POST['username'];
-    } else {
+    } 
+    else 
+    {
         echo "<p>Invalid login, please try again.</p>";
     }
 }
 
-if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
+if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) 
+{
     echo "<h1>Welcome!</h1>";
     echo "<p>You are logged in as {$_SESSION['username']}.</p>";
     echo "<p><a href='/session.php?logout=true'>Click here to logout.</a></p>";
-} else {
+} 
+else 
+{
 
 ?>
 

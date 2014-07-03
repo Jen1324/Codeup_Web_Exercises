@@ -1,6 +1,7 @@
 <?php
 
-class AddressDataStore {
+class AddressDataStore 
+{
 
     public $filename = '';
 

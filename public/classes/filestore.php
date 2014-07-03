@@ -2,7 +2,8 @@
 
 //THIS IS THE CODEUP.DEV FILESTORE
 
-class Filestore {
+class Filestore 
+{
 
     public $is_csv = false; 
 

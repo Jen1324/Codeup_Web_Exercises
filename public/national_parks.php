@@ -52,7 +52,7 @@ $numPages = floor($count / 4);
             <?php endforeach ?>
         </table>
         <ul class="pager">
-          <li class="previous disabled"><a href="?">&larr; Previous</a></li>
+          <li class="previous"><a href="?">&larr; Previous</a></li>
           <li class="next"><a href="?page=2">Next &rarr;</a></li>
         </ul>
     </div>
